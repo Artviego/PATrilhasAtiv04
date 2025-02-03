@@ -1,0 +1,38 @@
+using System;
+
+namespace Atividade_04
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{		
+			qualificVaga();
+			
+			Console.ReadKey();
+			
+		}
+		
+		public static void qualificVaga()
+		{
+			Console.Write("Você possui um diploma de ensino superior? ");
+			string diplomaSuperior = Console.ReadLine().ToLower();
+			
+			Console.Write("Você tem mais de 21 anos? ");
+			string idade = (Console.ReadLine().ToLower());
+			
+			if (idade == "sim" && diplomaSuperior == "sim")
+			{
+				Console.Write("\nParabéns, você está qualificado para a vaga!");
+				
+			}
+			else
+			
+				
+			{
+				Console.Write("\nVocê não está qualificado para a vaga.");
+			
+			}	
+			
+		}
+	}
+}
