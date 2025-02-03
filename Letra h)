@@ -1,0 +1,32 @@
+using System;
+
+namespace Atividade_04
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{		
+			Compra();
+			
+			Console.ReadKey();
+			
+		}
+		
+		public static void Compra()
+		{
+			Console.Write("Você deseja comprar uma mesa? ");
+			string sim = Console.ReadLine().ToLower();
+			
+			if (sim == "sim" || sim == "s")
+			{
+				Console.Write("\nObrigado pela compra!");
+				
+			}
+			else
+			{
+				Console.Write("\nTudo bem!");
+			}
+			
+		}
+	}
+}
