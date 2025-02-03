@@ -1,0 +1,36 @@
+using System;
+
+namespace Atividade_04
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{		
+			novaTemporada();
+			
+			Console.ReadKey();
+			
+		}
+		
+		public static void novaTemporada()
+		{
+			Console.Write("Você é assinante de um serviço streaming? ");
+			string servicoStreaming = Console.ReadLine().ToLower();
+			
+			Console.Write("Você já assistiu Stranger Things? ");
+			string serieST = (Console.ReadLine().ToLower());
+			
+			if (servicoStreaming == "sim" && serieST == "sim")
+			{
+				Console.Write("\nÓtimo, agora você pode assistir à nova temporada!");
+				
+			}
+			else	
+			{
+				Console.Write("\nVocê não pode ver a nova temporada.");
+			
+			}	
+			
+		}
+	}
+}
