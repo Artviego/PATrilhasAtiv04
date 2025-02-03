@@ -1,0 +1,35 @@
+using System;
+
+namespace Atividade_04
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{		
+			ComprarCarro();
+			
+			Console.ReadKey();
+			
+		}
+		
+		public static void ComprarCarro()
+		{
+			Console.Write("Você deseja comprar um carro novo? ");
+			string carroNovo = Console.ReadLine().ToLower();
+			
+			Console.Write("Você tem dinheiro suficiente para isso? ");
+			string dinheiroNecess = Console.ReadLine().ToLower();
+			
+			if (carroNovo == "sim" && dinheiroNecess == "sim") 
+			{
+				Console.Write("\nParabéns! Você pode comprar um carro novo!");
+				
+			} else
+			{
+				Console.Write("\nVocê não pode comprar um carro novo.");
+				
+			}	
+			
+		}
+	}
+}
