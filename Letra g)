@@ -1,0 +1,32 @@
+using System;
+
+namespace Atividade_04
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{		
+			Divisivel();
+			
+			Console.ReadKey();
+			
+		}
+		
+		public static void Divisivel()
+		{
+			Console.Write("Digite um número inteiro: ");
+			int numero = int.Parse(Console.ReadLine());
+			
+			if ((numero % 3 == 0) || (numero % 5 == 0))
+			{
+				Console.Write("\nO número é divisível por 3 OU por 5!");
+				
+			}
+			else
+			{
+				Console.Write("\nO número não é divisível por 3 OU por 5!");
+			}
+			
+		}
+	}
+}
