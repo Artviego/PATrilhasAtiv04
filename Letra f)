@@ -1,0 +1,41 @@
+using System;
+
+namespace Atividade_04
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{		
+			CafeAdic();
+			
+			Console.ReadKey();
+			
+		}
+		
+		public static void CafeAdic()
+		{
+			Console.Write("Você deseja adicionar algum adicional ao seu café? ");
+			string Adicional = Console.ReadLine().ToLower();
+			
+			if (Adicional == "sim")
+			{
+				Console.Write("Açúcar ou leite? ");
+				string AdicionalPrep = Console.ReadLine();
+				
+				if ((AdicionalPrep == "Açúcar") || (AdicionalPrep == "Leite"))
+				{
+					Console.WriteLine("\nCafé com adicional preparado!");
+				}
+				else
+				{
+					Console.WriteLine("\nAdicional inválido!");
+				}
+			
+		    }
+			else 
+			{
+				Console.Write("\nCafé sem adicional preparado!");
+			}
+		}
+	}
+}
