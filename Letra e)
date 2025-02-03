@@ -1,0 +1,34 @@
+using System;
+
+namespace Atividade_04
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{		
+			Acesso();
+			
+			Console.ReadKey();
+			
+		}
+		
+		public static void Acesso()
+		{
+			Console.Write("Qual é o seu nome? ");
+			string nome = Console.ReadLine().ToLower();
+			
+			Console.Write("Qual a sua idade? ");
+			int idade = int.Parse(Console.ReadLine());
+			
+			if (nome.Length > 3 && idade >= 18) {
+				
+				Console.WriteLine("Acesso permitido!");
+			}
+			else
+			{
+				Console.WriteLine("Acesso negado!");
+			}
+			
+		}
+	}
+}
