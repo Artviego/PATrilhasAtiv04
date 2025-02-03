@@ -1,0 +1,32 @@
+using System;
+
+namespace Atividade_04
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{		
+			VerificarIdentidade();
+			
+			Console.ReadKey();
+			
+		}
+		
+		public static void VerificarIdentidade()
+		{
+			Console.Write("O seu nomé é: Wilson ou Gloria? ");
+			string WilOuGloria = Console.ReadLine();
+			
+			if (WilOuGloria == "Will" || WilOuGloria == "Gloria")
+			{
+				Console.Write("\nOlá, bem vindo(a) de volta!");
+				
+			}
+			else
+			{
+				Console.Write("\nUsuário desconhecido!");
+			}
+			
+		}
+	}
+}
