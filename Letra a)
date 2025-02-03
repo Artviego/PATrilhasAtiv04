@@ -1,0 +1,37 @@
+using System;
+
+namespace Atividade_04
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+      //Chama a função da carteira para a afunção principal			
+			VerificarCarteira();
+			
+			Console.ReadKey();
+			
+		}
+		
+      //Função que executa a verificação da carteira de motorista	
+		public static void VerificarCarteira()
+		{
+			Console.Write("Qual a sua idade? ");
+			int idade = Int32.Parse(Console.ReadLine());
+			
+			Console.Write("Você possui uma carteira de motorista? ");
+			string carteiraMotorista = Console.ReadLine().ToLower();
+			
+			if (idade >= 18 && carteiraMotorista == "sim") 
+			{
+				Console.Write("\nVocê pode dirigir!");
+				
+			} else
+			{
+				Console.Write("\nVocê não pode dirigir!");
+				
+			}	
+			
+		}
+	}
+}
