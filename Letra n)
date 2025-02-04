@@ -1,0 +1,26 @@
+using System;
+
+namespace Atividade_04_Part_03
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.Write("Digite uma palavra: ");
+			string Palavra = Console.ReadLine();
+			
+			if (!string.IsNullOrEmpty(Palavra))
+			{
+				Console.WriteLine("A palavra não é vazia.");
+				
+			}
+			else
+			{
+				Console.WriteLine("A palavra é vazia.");
+			}
+			
+	
+			Console.ReadKey();
+		}
+	}
+}
