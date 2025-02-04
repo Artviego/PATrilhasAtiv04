@@ -1,0 +1,24 @@
+using System;
+
+namespace Atividade_04_Part_03
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.Write("Você é um robô? ");
+			string respostaRobo = Console.ReadLine().ToLower();
+			
+			if (respostaRobo == "não") 
+			{
+				Console.Write("\nPor favor, prove que você não é um robô! ");
+			}
+			else 
+			{
+				Console.WriteLine("\nVocê é um robô! ");
+			}
+			
+			Console.ReadKey();
+		}
+	}
+}
