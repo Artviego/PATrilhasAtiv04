@@ -1,0 +1,25 @@
+using System;
+
+namespace Atividade_04_Part_03
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.Write("Você deseja cancelar a assinatura? ");
+			string Assinatura = Console.ReadLine().ToLower();
+			
+			if (Assinatura == "sim")
+			{
+				Console.WriteLine("Por favor, confirme o cancelamento da operação");
+				
+			}
+			else
+			{
+				Console.WriteLine("Assinatura não cancelada");
+			}
+	
+			Console.ReadKey();
+		}
+	}
+}
