@@ -1,0 +1,26 @@
+using System;
+
+namespace Atividade_04_Part_03
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("(Somente números de 0 a 10 são válidos!)");
+			
+			Console.Write("\nDigite um número inteiro: ");
+			int numero = int.Parse(Console.ReadLine());
+			
+			if ((numero > 10) || (numero < 0))
+			{
+				Console.WriteLine("\nNúmero inválido!");
+			}
+			else
+			{
+				Console.WriteLine("\nNúmero válido!");
+			}
+			
+			Console.ReadKey();
+		}
+	}
+}
