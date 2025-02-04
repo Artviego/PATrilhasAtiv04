@@ -1,0 +1,26 @@
+using System;
+
+namespace Atividade_04_Part_03
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.Write("Você é um membro ativo do clube do Atlético? ");
+			string Clube = Console.ReadLine().ToLower();
+			
+			if(Clube == "sim")
+			{
+				Console.WriteLine("Por favor, atualize sua inscrição para continuar usufruindo dos benefícios do clube.");
+				
+			}
+			else
+			{
+				Console.WriteLine("Você não faz parte do clube!");
+			}
+			
+	
+			Console.ReadKey();
+		}
+	}
+}
