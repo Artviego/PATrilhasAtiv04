@@ -1,0 +1,26 @@
+using System;
+
+namespace Atividade_04_Part_03
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("(Serão válidos somente números diferentes de 0)");
+			
+			Console.Write("Digite um número diferente de zero: ");
+			int numeroDiferent = int.Parse(Console.ReadLine());
+		
+			if (numeroDiferent != 0) 
+			{
+				Console.Write("\nO número é diferente de zero! ");
+			}
+			else 
+			{
+				Console.WriteLine("\nNúmero inválido! ");
+			}
+			
+			Console.ReadKey();
+		}
+	}
+}
